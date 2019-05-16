@@ -1,0 +1,39 @@
+@media (max-width: 767px){
+	.slider img{
+		height: auto !important;
+	}
+	h1.name_company{
+		font-size: 30px;
+	}
+	.menu{
+		margin-top: 20px;
+	}
+	.product_name{
+		margin-top: 10px;
+	}
+	.title-partner{
+		font-size: 22px;
+		padding-left: 6px;
+		padding-right: 6px;
+	}
+	.title-news-daugia{
+		padding-left: 10px;
+	}
+	.date-c{
+		float:left !important;
+	}
+}
+@media (min-width: 768px) {
+	
+}
+@media (min-width: 768px) and (max-width: 999px){
+	.menu{
+		margin-top: 20px;
+	}
+}
+@media (min-width: 1000px) {
+	
+}
+@media (min-width: 1200px){
+	
+}
