@@ -28,8 +28,9 @@
                 <th style="width: 20px;"><input type="checkbox" name="chonhet" class="minimal" id="chonhet" /></th>
                 <th class="text-center with_dieuhuong">Stt</th>
                 <th>Hình ảnh</th>
-                <th>Email</th>
-                <th>Số điện thoại</th>
+                <th>Tên</th>
+                <!-- <th>Email</th> -->
+                <!-- <th>Số điện thoại</th> -->
                 <!-- <th>Link</th> -->
                 <th class="text-center with_dieuhuong">Sửa</th>
                 <th class="text-center with_dieuhuong">Xóa</th>
@@ -41,8 +42,9 @@
                 <td><input type="checkbox" name="chon" id="chon" value="" class="chon" /></td>
                 <td>{{$key+1}}</td>
                 <td><img src="{{asset('upload/banner/'.$item->photo)}}" class="img_product" alt=""></td>
-                <td>{{$item->email}}</td>    
-                <td>{{$item->phone}}</td>    
+                <td>{{ $item->name }}</td>
+                <!-- <td>{{$item->email}}</td>    
+                <td>{{$item->phone}}</td>     -->
                 <!-- <td>{{$item->url}}</td>             -->
                                 
                 <td class="text-center with_dieuhuong">

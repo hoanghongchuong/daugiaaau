@@ -68,9 +68,12 @@ Route::get('tin-tuc',['as'=>'getListNews', 'uses'=>'IndexController@getNews']);
 Route::get('tin-tuc/{alias}.html',['as'=>'getNewsDetail', 'uses'=>'IndexController@getNewsDetail']);
 Route::get('tin-tuc/{alias}',['as'=>'getListNews', 'uses'=>'IndexController@getListNews']);
 
-Route::get('bang-gia',['as'=>'getBangGia', 'uses'=>'IndexController@getBangGia']);
-Route::get('bang-gia/{alias}.html',['as'=>'getBangGiaDetail', 'uses'=>'IndexController@getBangGiaDetail']);
-Route::get('bang-gia/{alias}',['as'=>'getListBangGia', 'uses'=>'IndexController@getListBangGia']);
+Route::get('thu-tuc',['as'=>'getThuTuc', 'uses'=>'IndexController@getThuTuc']);
+Route::get('thu-tuc/{alias}.html',['as'=>'getThuTucDetail', 'uses'=>'IndexController@getThuTucDetail']);
+
+Route::get('tin-dau-gia',['as'=>'getDauGia', 'uses'=>'IndexController@getDauGia']);
+Route::get('tin-dau-gia/{alias}.html',['as'=>'getDauGiaDetail', 'uses'=>'IndexController@getDauGiaDetail']);
+Route::get('tin-dau-gia/{alias}',['as'=>'getListDauGia', 'uses'=>'IndexController@getListDauGia']);
 
 Route::get('{id}.html',['as'=>'getProductDetail', 'uses'=>'IndexController@getProductDetail']);
 Route::get('bai-viet/{id}.html',['as'=>'getBaiVietDetail', 'uses'=>'IndexController@getBaiVietDetail']);

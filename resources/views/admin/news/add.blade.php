@@ -55,7 +55,7 @@
 									</div>
 									
 									<div class="clearfix"></div>
-									@if($_GET['type']=='dich-vu')
+									@if($_GET['type']=='dau-gia')
 									<div class="form-group">
 								      	<label for="ten">Danh mục cha</label>
 								      	<select name="txtNewsCate" class="form-control">
@@ -79,12 +79,16 @@
 								      	<label class="control-label" for="inputError"><i class="fa fa-times-circle-o"></i> {!! $errors->first('txtAlias'); !!}</label>
 								      	@endif
 									</div>
-									@if($_GET['type']=='tin-tuc')
+									@if($_GET['type']=='dau-gia')
+									<div class="form-group">
+								      	<label for="desc">Giá khởi điểm (VNĐ)</label>
+								      	<input type="text" required="" name="price"  rows="5" class="form-control"></input>
+									</div>
+									@endif
 									<div class="form-group">
 								      	<label for="desc">Mô tả</label>
 								      	<textarea name="txtDesc"  rows="5" class="form-control"></textarea>
 									</div>
-									@endif
 									
 								</div>
 								<!-- <div class="col-md-6 col-xs-12">

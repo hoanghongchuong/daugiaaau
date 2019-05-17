@@ -36,12 +36,9 @@ class NewsController extends Controller
     public function getAdd()
     {
         if($_GET['type']=='tin-tuc') $trang='tin tức';
-        else if($_GET['type']=='dich-vu') $trang='dich vụ';
+        else if($_GET['type']=='dau-gia') $trang='Tin đấu giá';
         else if($_GET['type']=='huong-dan') $trang='hướng dẫn';
-        else if($_GET['type']=='ve-chung-toi') $trang='về chúng tôi';
-        else if($_GET['type']=='chinh-sach') $trang='chính sách';
-        else if($_GET['type']=='khong-gian') $trang='không gian';
-        else if($_GET['type']=='tuyển dụng') $trang='tuyển dụng';
+        
         else $trang = "bài viết";
 
         if(!empty($_GET['type'])){
@@ -88,6 +85,7 @@ class NewsController extends Controller
             $news->alias = changeTitle($request->txtName);
         }
         $news->mota = $request->txtDesc;
+        $news->price = $request->price;
         $news->photo = $img_name;
         $news->background = $img_name2;
         $news->title = $request->txtTitle;
@@ -138,11 +136,7 @@ class NewsController extends Controller
     public function getEdit(Request $request)
     {
         if($_GET['type']=='tin-tuc') $trang='tin tức';
-        else if($_GET['type']=='dich-vu') $trang='dich vụ';
-        else if($_GET['type']=='du-an-seo') $trang='Dự án seo';
-        else if($_GET['type']=='du-an-marketing') $trang='Dự án marketing';
-        else if($_GET['type']=='du-an-content') $trang='Dự án content';
-        else if($_GET['type']=='du-an-facebook') $trang='Dự án facebook ads';
+        else if($_GET['type']=='dau-gia') $trang='Tin đấu giá';
         
         else $trang = "bài viết";
 
@@ -260,6 +254,7 @@ class NewsController extends Controller
             }
             $news->noibat = $request->hotnews;
             $news->mota = $request->txtDesc;
+            $news->price = $request->price;
             $news->title = $request->txtTitle;
             $news->content = $request->txtContent;
             $news->keyword = $request->txtKeyword;

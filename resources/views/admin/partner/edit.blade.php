@@ -38,19 +38,19 @@
               
             <div class="clearfix"></div>
             <div class="col-md-6">
-              <!-- <div class="form-group">
+              <div class="form-group">
                 <label for="">Tên</label>
                 <input type="text" name="name" class="form-control" value="{{$data->name}}">
                
-              </div> -->
-              <div class="form-group">
+              </div>
+              <!-- <div class="form-group">
                 <label for="">Email</label>
                 <input type="text" name="email" class="form-control" value="{{$data->email}}">
               </div>
                <div class="form-group">
                 <label for="">Số điện thoại</label>
                 <input type="text" name="phone" class="form-control" value="{{$data->phone}}">
-              </div>
+              </div> -->
             </div>
             <!-- <div class="col-md-6">
               <div class="form-group">

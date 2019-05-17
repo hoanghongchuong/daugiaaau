@@ -52,9 +52,9 @@
         <div class="row">                
             <div class="menu">
                 <ul class="navi">
-                    <li class="active"><a href="{{url('')}}">Trang chủ</a></li>
-                    <li><a href="{{url('gioi-thieu')}}">Giới thiệu</a></li>
-                    <li>
+                    <li class="@if(@$com == 'index')active @endif"><a href="{{url('')}}">Trang chủ</a></li>
+                    <li class="@if(@$com == 'gioi-thieu')active @endif"><a href="{{url('gioi-thieu')}}">Giới thiệu</a></li>
+                    <li class="@if(@$com == 'dau-gia')active @endif">
                         <a href="{{url('tin-dau-gia')}}">Tin đấu giá <i class="fa fa-angle-down" style="color: #fff"></i></a>                        
                         <ul class="vk-menu__child">                                
                             @foreach($categories as $cate)
@@ -62,9 +62,9 @@
                             @endforeach                     
                         </ul>
                     </li>
-                    <li><a href="{{url('thu-tuc')}}">Thủ tục</a></li>
-                    <li><a href="{{url('tin-tuc')}}">Tin tức</a></li>
-                    <li><a href="{{url('lien-he')}}">Liên hệ</a></li>
+                    <li class="@if(@$com == 'thu-tuc')active @endif"><a href="{{url('thu-tuc')}}">Thủ tục</a></li>
+                    <li class="@if(@$com == 'tin-tuc')active @endif"><a href="{{url('tin-tuc')}}">Tin tức</a></li>
+                    <li class="@if(@$com == 'lien-he')active @endif"><a href="{{url('lien-he')}}">Liên hệ</a></li>
                 </ul>
             </div>
         </div>

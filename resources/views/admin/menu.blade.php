@@ -16,7 +16,7 @@
             <!-- <li><a href="backend/orders"><i class="fa fa-shopping-cart"></i> <span>Quản lý đơn hàng</span></a></li> -->           
             <li><a href="backend/news?type=thu-tuc"><i class="fa fa-circle-o"></i> <span>Thủ tục</span></a></li>
             <li><a href="backend/news?type=tin-tuc"><i class="fa fa-circle-o"></i> <span>Tin tức</span></a></li>       
-            <!-- <li><a href="backend/partner"><i class="fa fa-circle-o"></i> <span>Quản lý đối tác</span></a></li> -->
+            <li><a href="backend/partner"><i class="fa fa-circle-o"></i> <span>Quản lý đối tác</span></a></li>
             <!-- <li><a href="backend/feedback"><i class="fa fa-gear" aria-hidden="true"></i> <span>Feedback</span></a></li> -->
             <!-- <li><a href="backend/slogan"><i class="fa fa-gear" aria-hidden="true"></i> <span>Slogan</span></a></li> -->
            

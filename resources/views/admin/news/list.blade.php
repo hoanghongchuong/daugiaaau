@@ -49,11 +49,14 @@
                 <th style="width: 20px;"><input type="checkbox" name="chonhet" class="minimal" id="chonhet" /></th>
                 <th class="text-center with_dieuhuong">Stt</th>
                 @if($_GET['type']=='dau-gia')
-                <th>Danh mục cha</th>             
-                
+                <th>Danh mục cha</th>           
                 @endif
                 <th>Hình ảnh</th>
                 <th>Tên bài viết</th>
+                @if($_GET['type']=='dau-gia')
+                <th>Giá khởi điểm</th>
+                @endif
+                <th>Ngày đăng</th>
                 <th class="text-center with_dieuhuong">Hoạt động</th>
                 <th class="text-center with_dieuhuong">Sửa</th>
                 <th class="text-center with_dieuhuong">Xóa</th>
@@ -80,7 +83,10 @@
                
                 <td>{{$item->name}}
                 </td>
-                               
+                @if($_GET['type']=='dau-gia')
+                <td>{{ $item->price }} VNĐ</td>
+                @endif
+                <td>{{ date('d/m/Y H:i:s', strtotime($item->created_at)) }}</td>  
                 <td class="text-center with_dieuhuong">
                   <div class="form-group"> 
                     @if($item->status>0)
